@@ -102,7 +102,7 @@ jobs:
         with:
          username: ${{ env.REGISTRY_USERID }}
          password: ${{ secrets.DOCKER_KEY }}
-         repository: omearaj/${{ env.IMAGE_NAME }}
+         repository: mlukes81/${{ env.IMAGE_NAME }}
          tag_with_ref: true
          tag_with_sha: true  
          add_git_labels: true  
@@ -112,7 +112,7 @@ jobs:
         env:
           SNYK_TOKEN: ${{ secrets.SNYK_API_TOKEN }}
         with:
-         image: omearaj/${{ env.IMAGE_NAME }}
+         image: mlukes81/${{ env.IMAGE_NAME }}
          command: monitor  
 
  # Push image to Container Registry
